@@ -23,7 +23,7 @@ def get_hit_count():
 @app.route('/movie')
 def hit():
     count = get_hit_count()
-    return "Welcome to BookingApp - Movie Booking Page - on node %s. This page has been hit %i times since deployment" % ( socket.gethostname(), int(count))
+    return "<html>Welcome to Movie Booking Page Version 1.0 - on node %s. Hit count = %i" % ( socket.gethostname(), int(count))
 
 
 if __name__ == "__main__":
